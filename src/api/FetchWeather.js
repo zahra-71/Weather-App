@@ -14,4 +14,5 @@ const FetchWeather = async (query) => {
     
     return data;
 }
+
 export default FetchWeather;

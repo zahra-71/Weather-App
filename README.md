@@ -1,7 +1,7 @@
 # Weather App
 ![Alt text](/src/images/Screenshot.png?raw=true "Optional Title")
 
-##Summary
+## Summary
 
 The Weather app is a progressive web app to display weather conditions.
 
