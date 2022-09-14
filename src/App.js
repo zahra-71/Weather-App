@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import './App.css';
 
-
 import FetchWeather from './api/FetchWeather.js'
+
 function App() {
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState('');
 
   const search = async (e) => {
-    if(e.key == 'Enter') {
+    if(e.key === 'Enter') {
       const data = await FetchWeather(query)
 
       console.log(data);
@@ -24,7 +24,7 @@ function App() {
         placeholder="search..."
         value={query}
         onChange={e => setQuery(e.target.value)}
-         onKeyPress={search}
+        onKeyPress={search}
       />
       {weather.main && (
         <div className="city">
